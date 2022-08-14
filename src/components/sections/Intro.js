@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import React, {useRef, useCallback, useEffect} from 'react'
 import "./Intro.scss"
 function Intro() {
