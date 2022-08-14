@@ -7,9 +7,11 @@ function Intro() {
   var bool2 = true;
   let myInt, myInt2;
   const listenHover = useCallback((event) => {
-      myInt = setInterval(function() {
-        if (!bool) ref.current.style.color = 'blue';
-        else ref.current.style.color = 'orange';
+    if (!bool) ref.current.style.color = '#1F4096';
+        else ref.current.style.color = '#E84A27';
+    myInt = setInterval(function() {
+        if (!bool) ref.current.style.color = '#1F4096';
+        else ref.current.style.color = '#E84A27';
         bool = !bool;
     }, 700);
       myInt2 = setInterval(function() {
@@ -19,7 +21,10 @@ function Intro() {
       }, 2800);
   }, [])
   const listenLeave = (event) => {
-    if (event) return (clearInterval(myInt), clearInterval(myInt2), ref.current.style.color = '#F8F8F8', ref.current.innerHTML = "University of Illinois '25");
+    if (event) return (clearInterval(myInt), 
+    clearInterval(myInt2), 
+    ref.current.style.color = '#F8F8F8',
+     ref.current.innerHTML = "University of Illinois '25");
   }
   useEffect(() => {
     window.addEventListener('mouseenter', listenHover);
@@ -30,7 +35,10 @@ function Intro() {
   
   return (
     <div className="intro-container">
+    <div className="title-container">
         <h1 className='name'>ANDREW K. DALY</h1>
+        <h1 className='mirror'>ANDREW K. DALY</h1>
+        </div>
         <h2 className='subtitle'>Software Developer</h2>
         <h3 className='subtitle2' ref={ref} onMouseEnter={listenHover} onMouseLeave={listenLeave}>University of Illinois '25</h3>
     </div>
