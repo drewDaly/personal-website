@@ -1,0 +1,8 @@
+@import "./../../styles/colors.scss";
+.intro-container {
+    padding: 75px 0 0 75px;
+}
+.subtitle, .subtitle2 {
+    color: $secondary;
+    display: block;
+}
