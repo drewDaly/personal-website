@@ -27,3 +27,15 @@ h2, h3 {
 p {
     color: $tertiary;
 }
+::-webkit-scrollbar {
+    width: 20px;
+}
+::-webkit-scrollbar-track {
+    background: black; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: grey; 
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

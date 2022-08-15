@@ -1,5 +1,20 @@
-.command {
-    position: fixed;
-    left: 1100px;
-    top: 50px;
+.command, .command-2 {
+    display: flex;
+    position: relative;
+    height: 50px;
+    background-color: black;
+    padding: 5px;
+}
+#commandline {
+    background-color: black;
+    color: white;
+    height: 25px;
+    border: none;
+    resize: none;
+    outline:none;
+    font-size:medium;
+}
+.user {
+    background-color: black;
+    color: white;
 }

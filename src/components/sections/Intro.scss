@@ -26,6 +26,7 @@
     .mirror {
         display: flex;
         transition: all 0.3s ease;
+        opacity: .25;
     }
 }
 .subtitle:hover {
@@ -105,4 +106,14 @@
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+}
+#command-wrap {
+    position: fixed;
+    left: 1000px;
+    top: 50px;
+    overflow-y:scroll;
+    height: 200px;
+    width: 400px;
+    background-color: black;
+    
 }
