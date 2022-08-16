@@ -42,7 +42,7 @@ const Command = () => {
     <div className="commmand-wrap" id="command-wrap">
     <span className="command" id="command">
         <div className='user'><p>visitor@drew.com:~$&nbsp;</p></div>
-        <textarea onKeyDown={handleKeyPress} type='text' id='commandline' spellCheck='false'></textarea>
+        <textarea onKeyDown={handleKeyPress} type='text' id='commandline' spellCheck='false' maxLength={15}></textarea>
     </span>
     </div>
   )
