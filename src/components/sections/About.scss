@@ -9,3 +9,27 @@
     display: flex;
     justify-content: center;
 }
+.aboutImg-wrap {
+    max-width: 400px;
+    border: 0; 
+    border-radius: 5px;
+    border-right: 5px;
+    border-bottom: 5px;
+    border-style: solid;
+    border-color: $tertiary;
+}
+#profile {
+    border-radius: 10px;
+    padding:7px;
+}
+#profile:hover {
+    opacity:1;
+}
+.aboutImg-wrap:hover {
+    border:0;
+    border: 0px;
+    border-right: 7px;
+    border-bottom: 7px;
+    border-style: solid;
+    border-color: $tertiary;
+}
