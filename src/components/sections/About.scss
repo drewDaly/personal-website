@@ -1,28 +1,40 @@
 @import "./../../styles/colors.scss";
 
-
+.about-container {
+    padding-bottom: 200px;
+}
 .about-title {
     display: flex;
     justify-content: center;
 }
-.about-content {
+.about-para {
     display: flex;
     justify-content: center;
+    text-align: center;
+}
+.about-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    column-gap: 250px;
 }
 .aboutImg-wrap {
     max-width: 300px;
-    opacity:.6;
-    background-color: $primary;
     justify-content: center;
     display: flex;
+    align-items: center;
+    vertical-align: middle;
+    border:4px;
+    border-style: solid;
+    border-color:$primary;
 }
 #profile {
     border-radius: 10px;
-    opacity: .4;
 }
 .aboutImg-wrap:hover {
     animation: rotate 8s infinite;
-    background-color: transparent;
     border:10px;
     border-style: solid;
     border-color:$primary;
